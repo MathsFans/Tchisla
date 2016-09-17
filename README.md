@@ -2,7 +2,7 @@
 
 中文说明
 
-本项目用来收集[Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8)游戏的解法。
+本项目用来收集[Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8)游戏的最优解法。
 
 本Repo页面维护团队：
 - [@Tairraos](https://github.com/tairraos)
@@ -18,14 +18,14 @@
 
 Readme in English
 
-This project will collect all good solutions for iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
+This project will collect all optimal solutions for iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
 
 This Repo is currently maintained by
 - [@Tairraos](https://github.com/tairraos)
 - [@gsdevcn](https://github.com/gsdevcn)
 
-Any suggestions or github issues are welcome.
+Any suggestions are welcome.
 
-All current (2016-09-17) optimal solutions for 1-2000 (except 1389#6) are updated, more solutions will be coming soon.
+All current (2016-09-17) optimal solutions for 1-2000 (except 1389#6) are updated, more solutions are coming soon.
 
 [Click to view solutions](https://github.com/MathsFans/Tchisla/blob/master/solutions.txt)
