@@ -4,8 +4,9 @@
 
 本项目用来收集[Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8)游戏的解法。
 
-本Repo页面维护团队：  
-- [@gsdevcn](https://github.com/gsdevcn)  
+本Repo页面维护团队：
+- [@Tairraos](https://github.com/tairraos)
+- [@gsdevcn](https://github.com/gsdevcn)
   
 本Repo Q群：527621502，欢迎通过github提交issue，也欢迎加群讨论。
 
@@ -20,6 +21,7 @@ Readme in English
 This project will collect all good solutions for iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
 
 This Repo is currently maintained by
+- [@Tairraos](https://github.com/tairraos)
 - [@gsdevcn](https://github.com/gsdevcn)
 
 Any suggestions or github issues are welcome.
