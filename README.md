@@ -10,11 +10,7 @@
   
 本Repo Q群：527621502，欢迎通过github提交issue，也欢迎加群讨论。
 
-<<<<<<< master
-当前更新了1-2000的解法，全部是当前最优解(2016-09-26)，后续会添加更多的解法。
-=======
 当前更新了1-2000的解法，全部是当前最优解，后续会添加更多的解法。
->>>>>>> local
 
 [点击查看](https://github.com/MathsFans/Tchisla/blob/master/solutions_1_2000.txt)
 
@@ -36,15 +32,11 @@ This Repo is currently maintained by
 
 Any suggestions are welcome.
 
-<<<<<<< master
-All current (2016-09-26) optimal solutions for 1-2000 are updated, more solutions are coming soon.
-=======
 All current optimal solutions for 1-2000 are updated, more solutions are coming soon.
 
 [Click to view solutions](https://github.com/MathsFans/Tchisla/blob/master/solutions_1_2000.txt)
 
 __Changelog__
->>>>>>> local
 
 * 2016-09-28 Update 8 step solution for 1788#7
 * 2016-09-26 Update 6 step solutions for 1401#4 and 1403#4
