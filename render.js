@@ -36,8 +36,23 @@
     },
     preparePad: function () {
       tchisla.$solutionPas = document.getElementById('solutions');
+      for (var y = 1; y <= 2000; y++) {
+        var tr = document.createElement('tr'),
+          td = document.createElement('td');
+        td.setAttribute('id', 'row-' + y);
+        td.setAttribute('class', 'row');
+        td.innerText = y;
+        tr.appendChild(td);
+        for (var x = 1; x <= 9; x++) {
+          td = document.createElement('td');
+          td.setAttribute('id', y + '-' + x);
+          tr.appendChild(td);
+        }
+        tchisla.$solutionPas.appendChild(tr);
+      }
     },
     initial: function () {
+      tchisla.preparePad();
 
       //tchisla.subscribe('dataReady', tchisla.parseData);
       tchisla.getData();

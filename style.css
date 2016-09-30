@@ -1,3 +1,39 @@
-body{
-	background-color: #FFEFEF;
+body {
+    background-color: #0b1119;
+}
+
+#tchislaPad {
+    position: fixed;
+    background-color: #377fde;
+    height: 15px;
+}
+
+#tchislaPad span {
+    width: 40px;
+}
+
+#tchislaPad span.first {
+    width: 35px;
+}
+
+#solutions {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+#solutions td {
+    font: 14px/1.5 Helvetica, Arial, sans-serif;
+    width: 40px;
+    height: 40px;
+    background-color: #f2bc0f;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#solutions td.row {
+    color: #afadad;
+    background: none;
+    width: 20px;
+    text-align: right;
 }
