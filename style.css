@@ -1,39 +1,44 @@
 body {
-    background-color: #0b1119;
+    background-color: #0f1720;
+    padding: 0;
+    margin: 0;
 }
 
-#tchislaPad {
+#numTitle {
     position: fixed;
+    top:0;
+    font: 10px/1.5 Helvetica, Arial, sans-serif;
     background-color: #377fde;
     height: 15px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
 }
 
-#tchislaPad span {
-    width: 40px;
-}
-
-#tchislaPad span.first {
-    width: 35px;
+#numTitle span {
+    width: 36px;
+    display: inline-block;
 }
 
 #solutions {
-    margin: auto;
+    margin: 20px auto 0;
     border-collapse: separate;
-    border-spacing: 2px;
+    border-spacing: 3px;
 }
 
 #solutions td {
-    font: 14px/1.5 Helvetica, Arial, sans-serif;
-    width: 40px;
-    height: 40px;
+    font: 14px/1 Helvetica, Arial, sans-serif;
+    width: 36px;
+    height: 36px;
+    padding: 0;
     background-color: #f2bc0f;
-    border-radius: 10px;
+    border-radius: 6px;
     text-align: center;
 }
 
 #solutions td.row {
     color: #afadad;
     background: none;
-    width: 20px;
     text-align: right;
+    font-size: 10px;
 }
