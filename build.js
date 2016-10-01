@@ -30,6 +30,7 @@ var fs = require('fs'),
       conf.dataSource = sourceArr;
       conf.dataTarget = targetArr;
     },
+
     genBestData: function () {
       var filename = conf.dataTargetPath + conf.dataBestFile,
         fileContent = [];
@@ -41,12 +42,28 @@ var fs = require('fs'),
         fileContent.push(rowContent.join(''));
       });
       builder.saveFileContent(filename, fileContent.join('\n'));
+      console.log(filename, 'was generated.');
     },
+
+    genSolutionsData: function () {
+      var filename, fileContent = [];
+      conf.dataTarget.forEach(function (dataRow, i) {
+        dataRow.forEach(function (data, j) {
+          fileContent.push(i + '#' + j + ' ' + data[1]);
+        });
+        if (!(i % 50) || i === conf.dataTarget.length) {
+          filename = conf.dataTargetPath + conf.dataSolutionFile.replace(/\{0\}/, i - 49 + '-' + i);
+          builder.saveFileContent(filename, fileContent.join('\n'));
+          console.log(filename, 'was generated.');
+          fileContent = [];
+        }
+      });
+    },
+
     build: function () {
       builder.getSourceData();
       builder.genBestData();
-      // var filename = conf.dataTargetPath + conf.dataSolutionFile;
-      // builder.saveFileContent(filename);
+      builder.genSolutionsData();
     }
 
   };
