@@ -8,11 +8,8 @@
     },
     tchisla = window.tchisla = {
       getData: function (file, callback) {
-        if (sys[file]) {
-          callback(sys[file]);
-        }
         var request = new XMLHttpRequest();
-        request.open('GET', file, true);
+        request.open('GET', sys.dataPath + file, true);
         request.onload = function () {
           if (request.status >= 200 && request.status < 400) {
             console.log('file load success', file);
@@ -32,8 +29,8 @@
         });
       },
 
-      preparePad: function (dataBest) {
-        var bestArr = dataBest.split(/[\n\r]+/);
+      preparePad: function () {
+        var bestArr = sys[sys.dataBest].split(/[\n\r]+/);
         bestArr.forEach(function (line, y) {
           var tr = document.createElement('tr'), td = document.createElement('td');
           td.setAttribute('class', 'row');
@@ -50,7 +47,7 @@
       },
 
       render: function () {
-        tchisla.getData(sys.dataPath + sys.dataBest, tchisla.preparePad);
+        tchisla.getData(sys.dataBest, tchisla.preparePad);
         sys.$solutionPas.addEventListener('click', function (e) {
           var quiz = e.target.getAttribute('rel'), temp = quiz.split('#'),
             targetNum = +temp[0], baseNum = +temp[1];
