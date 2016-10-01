@@ -6,7 +6,7 @@ body {
 
 #numTitle {
     position: fixed;
-    top:0;
+    top: 0;
     font: 10px/1.5 Helvetica, Arial, sans-serif;
     background-color: #377fde;
     height: 15px;
@@ -46,4 +46,8 @@ body {
     background: none;
     text-align: right;
     font-size: 10px;
+}
+
+#answer {
+    display: none;
 }

@@ -8,12 +8,16 @@
     },
     tchisla = window.tchisla = {
       getData: function (file, callback) {
+        if (sys[file]) {
+          callback(sys[file]);
+        }
         var request = new XMLHttpRequest();
         request.open('GET', file, true);
         request.onload = function () {
           if (request.status >= 200 && request.status < 400) {
             console.log('file load success', file);
-            callback(request.responseText);
+            sys[file] = request.responseText;
+            callback(sys[file]);
           }
         };
         request.send();
@@ -26,31 +30,34 @@
             var quiz = RegExp.$1, targetNum = RegExp.$2, baseNum = RegExp.$3, answer = RegExp.$4;
           }
         });
-        sys.publish('dataParsed', tchisla.dataArr);
       },
 
       preparePad: function (dataBest) {
         var bestArr = dataBest.split(/[\n\r]+/);
         bestArr.forEach(function (line, y) {
-          var tr = document.createElement('tr'),
-            td = document.createElement('td');
+          var tr = document.createElement('tr'), td = document.createElement('td');
           td.setAttribute('class', 'row');
           td.innerText = y + 1;
           tr.appendChild(td);
           for (var x = 0; x <= 8; x++) {
             td = document.createElement('td');
             td.setAttribute('rel', y + '#' + x);
-            td.innerText = Number('0x' + line[x]);
+            td.innerText = parseInt(line[x], 36);
             tr.appendChild(td);
           }
           sys.$solutionPas.appendChild(tr);
         });
       },
-      initial: function () {
+
+      render: function () {
         tchisla.getData(sys.dataPath + sys.dataBest, tchisla.preparePad);
+        sys.$solutionPas.addEventListener('click', function (e) {
+          var quiz = e.target.getAttribute('rel'), temp = quiz.split('#'),
+            targetNum = +temp[0], baseNum = +temp[1];
+        })
       }
     };
 
-  tchisla.initial();
+  tchisla.render();
 
 })();

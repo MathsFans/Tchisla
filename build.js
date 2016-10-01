@@ -37,7 +37,7 @@ var fs = require('fs'),
       conf.dataTarget.forEach(function (dataRow, i) {
         var rowContent = [];
         dataRow.forEach(function (data) {
-          rowContent.push((+data[0]).toString(16));
+          rowContent.push((+data[0]).toString(36));
         });
         fileContent.push(rowContent.join(''));
       });
