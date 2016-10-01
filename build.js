@@ -5,7 +5,7 @@ var fs = require('fs'),
     dataSourceFile: 'solutions.txt',
     dataTargetPath: 'data/',
     dataBestFile: 'best.dat',
-    dataSolutionFile: 'solution.{0}.dat',
+    dataSolutionFile: 'solution.%n.dat',
     sourcePatten: /^(\d+)#(\d+) Best:\[(\d+)\] -> (\d+) = ([\d√^!+\-\*/\(\)]+)$/
   }, builder = {
 
@@ -52,7 +52,7 @@ var fs = require('fs'),
           fileContent.push(i + '#' + j + ' ' + data[1]);
         });
         if (!(i % 50) || i === conf.dataTarget.length) {
-          filename = conf.dataTargetPath + conf.dataSolutionFile.replace(/\{0\}/, (i-1)/50|0);
+          filename = conf.dataTargetPath + conf.dataSolutionFile.replace(/%n/, (i-1)/50|0);
           builder.saveFileContent(filename, fileContent.join('\n'));
           console.log(filename, 'was generated.');
           fileContent = [];
