@@ -52,7 +52,7 @@ var fs = require('fs'),
           fileContent.push(i + '#' + j + ' ' + data[1]);
         });
         if (!(i % 50) || i === conf.dataTarget.length) {
-          filename = conf.dataTargetPath + conf.dataSolutionFile.replace(/\{0\}/, i - 49 + '-' + i);
+          filename = conf.dataTargetPath + conf.dataSolutionFile.replace(/\{0\}/, (i-1)/50|0);
           builder.saveFileContent(filename, fileContent.join('\n'));
           console.log(filename, 'was generated.');
           fileContent = [];
