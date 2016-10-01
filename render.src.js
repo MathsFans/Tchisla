@@ -5,7 +5,7 @@
       dataBest: 'best.dat',
       dataSolutions: 'solution.%n.dat',
       answer: [],
-      $solutionPas: document.getElementById('solutions'),
+      $solutions: document.getElementById('solutions'),
       $answer: document.getElementById('answer'),
       getName: function (n) {
         return sys.dataSolutions.replace(/%n/, (n - 1) / 50 | 0)
@@ -49,16 +49,17 @@
             td.innerText = parseInt(line[x], 36);
             tr.appendChild(td);
           }
-          sys.$solutionPas.appendChild(tr);
+          sys.$solutions.appendChild(tr);
         });
       },
       showAnswer: function (targetNum, baseNum) {
         sys.$answer.style.display = 'block';
+        sys.$solutions.style.marginTop = '40px';
         sys.$answer.innerText = targetNum + '=' + sys.answer[targetNum][baseNum];
       },
       render: function () {
         tchisla.getData(sys.dataBest, tchisla.preparePad);
-        sys.$solutionPas.addEventListener('click', function (e) {
+        sys.$solutions.addEventListener('click', function (e) {
           var quiz = e.target.getAttribute('rel');
           if (!quiz) {
             return;
