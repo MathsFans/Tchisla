@@ -1,0 +1,100 @@
+body {
+    background: #0f1720;
+    padding: 0;
+    margin: 0;
+}
+
+#function {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#numTitle {
+    font: 10px/1.5 Helvetica, Arial, sans-serif;
+    background: #377fde;
+    height: 15px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+}
+
+#numTitle span {
+    width: 41px;
+    display: inline-block;
+}
+
+#numTitle span.row {
+    width: 30px;
+}
+
+#solutions {
+    margin: 20px auto 0;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+#solutions td {
+    font: 14px/1 Helvetica, Arial, sans-serif;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    background: #f2bc0f;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#solutions td.row {
+    color: #afadad;
+    width: 30px;
+    background: none;
+    text-align: right;
+    font-size: 10px;
+}
+
+#answer {
+    display: none;
+    background: #0f1720;
+    color: #afadad;
+    height: 20px;
+    font: 18px/26px Consolas, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+    #solutions td {
+        width: 37px;
+        height: 37px;
+    }
+
+    #solutions td.row {
+        width: 30px;
+    }
+
+    #numTitle span {
+        width: 37px;
+    }
+
+    #numTitle span.row {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #solutions td {
+        width: 30px;
+        height: 30px;
+    }
+
+    #solutions td.row {
+        width: 30px;
+    }
+
+    #numTitle span {
+        width: 32px;
+    }
+
+    #numTitle span.row {
+        width: 30px;
+    }
+}
