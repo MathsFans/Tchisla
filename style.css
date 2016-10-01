@@ -16,7 +16,7 @@ body {
 }
 
 #numTitle span {
-    width: 38px;
+    width: 41px;
     display: inline-block;
 }
 
@@ -50,4 +50,42 @@ body {
 
 #answer {
     display: none;
+}
+
+@media screen and (max-width: 375px) {
+    #solutions td {
+        width: 37px;
+        height: 37px;
+    }
+
+    #solutions td.row {
+        width: 30px;
+    }
+
+    #numTitle span {
+        width: 37px;
+    }
+
+    #numTitle span.row {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #solutions td {
+        width: 30px;
+        height: 30px;
+    }
+
+    #solutions td.row {
+        width: 30px;
+    }
+
+    #numTitle span {
+        width: 32px;
+    }
+
+    #numTitle span.row {
+        width: 30px;
+    }
 }
