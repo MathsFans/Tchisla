@@ -13,6 +13,7 @@
 当前更新了1-2000的解法，全部是当前最优解，后续会添加更多的解法。
 
 [解题数据](https://github.com/MathsFans/Tchisla/blob/master/solutions.txt)
+
 [渲染页面](https://mathsfans.github.io/Tchisla/)
 
 __更新日志__
@@ -36,6 +37,7 @@ Any suggestions are welcome.
 All current optimal solutions for 1-2000 are updated, more solutions are coming soon.
 
 [Solutions Data](https://github.com/MathsFans/Tchisla/blob/master/solutions.txt)
+
 [Rendered Page](https://mathsfans.github.io/Tchisla/)
 
 __Changelog__
