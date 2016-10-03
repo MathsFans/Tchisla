@@ -64,7 +64,7 @@ body {
     top: calc(50% - 100px);
     left: 10.5%;
     border-radius: 40px;
-    font: 18px/26px Consolas, Helvetica, Arial, sans-serif;
+    font: 18px/18px Consolas, Helvetica, Arial, sans-serif;
 }
 
 #answer #quiz {
@@ -73,16 +73,19 @@ body {
 }
 
 #answer #formula {
-    margin: 10px 20px;
-    height: 100px;
+    height: 140px;
+    display: table-cell;
+    width: 312px;
+    vertical-align: middle;
     text-align: center;
+    font-size: 16px;
     font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw;
-    font-size: 110%;
 }
 
 #answer #solution {
     margin: 0 20px;
     text-align: center;
+    font-size: 14px;
 }
 
 #controller {
