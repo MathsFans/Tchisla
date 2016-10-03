@@ -67,8 +67,11 @@
       showAnswer: function (targetNum, baseNum) {
         sys.$answer.style.display = 'block';
         sys.$quiz.innerText = targetNum + '#' + baseNum;
-        sys.$formula.innerText = sys.getLatex(sys.answer[targetNum][baseNum][1]);
         sys.$solution.innerText = targetNum + '=' + sys.answer[targetNum][baseNum][0];
+        if (MathJax) {
+          sys.$formula.innerText = sys.getLatex(sys.answer[targetNum][baseNum][1]);
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
       },
       render: function () {
         tchisla.getData(sys.dataBest, tchisla.preparePad, true);
