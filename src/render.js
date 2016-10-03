@@ -70,7 +70,7 @@
         sys.$solution.innerText = targetNum + '=' + sys.answer[targetNum][baseNum][0];
         if (MathJax) {
           sys.$formula.innerText = sys.getLatex(sys.answer[targetNum][baseNum][1]);
-          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, sys.$formula]);
         }
       },
       render: function () {
