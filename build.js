@@ -6,7 +6,16 @@ var fs = require('fs'),
     dataTargetPath: 'data/',
     dataBestFile: 'best.dat',
     dataSolutionFile: 'solution.%n.dat',
-    sourcePatten: /^(\d+)#(\d+) Best:\[(\d+)\] -> (\d+) = ([\d√^!+\-\*/\(\)]+)$/
+    sourcePatten: /^(\d+)#(\d+) ([\d√^!+\-\*/\(\)]+) \$\$(.*)\$\$$/,
+    latexMap:function(s) {
+      return s
+        .replace(/\\times/g,'t')
+        .replace(/\\sqrt/g,'s')
+        .replace(/\\left/g,'l')
+        .replace(/\\right/g,'r')
+        .replace(/\\frac/g,'f')
+        .replace(/\\textstyle/g,'x');
+    }
   }, builder = {
 
     getFileContent: function (file) {
@@ -24,7 +33,7 @@ var fs = require('fs'),
       sourceArr.forEach(function (data) {
         if (data.match(conf.sourcePatten)) {
           targetArr[RegExp.$1] = targetArr[RegExp.$1] || [];
-          targetArr[RegExp.$1][RegExp.$2] = [RegExp.$3, RegExp.$5];
+          targetArr[RegExp.$1][RegExp.$2] = [RegExp.$3, RegExp.$4];
         }
       });
       conf.dataSource = sourceArr;
@@ -34,10 +43,10 @@ var fs = require('fs'),
     genBestData: function () {
       var filename = conf.dataTargetPath + conf.dataBestFile,
         fileContent = [];
-      conf.dataTarget.forEach(function (dataRow, i) {
+      conf.dataTarget.forEach(function (dataRow) {
         var rowContent = [];
-        dataRow.forEach(function (data) {
-          rowContent.push((+data[0]).toString(36));
+        dataRow.forEach(function (data, x) {
+          rowContent.push(data[1].replace(RegExp('[^' + x + ']', 'g'), '').length.toString(36));
         });
         fileContent.push(rowContent.join(''));
       });
@@ -49,7 +58,7 @@ var fs = require('fs'),
       var filename, fileContent = [];
       conf.dataTarget.forEach(function (dataRow, i) {
         dataRow.forEach(function (data, j) {
-          fileContent.push(i + '#' + j + ' ' + data[1]);
+          fileContent.push(i + ',' + j + ',' + data[0] + ',' + conf.latexMap(data[1]));
         });
         if (!(i % 50) || i === conf.dataTarget.length) {
           filename = conf.dataTargetPath + conf.dataSolutionFile.replace(/%n/, (i-1)/50|0);
