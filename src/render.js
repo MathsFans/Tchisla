@@ -15,9 +15,9 @@
       getName: function (n) {
         return sys.dataSolutions.replace(/%n/, (n - 1) / 50 | 0)
       },
-      getLatex:function(s) {
-        return s.replace(/t/g,'\\times').replace(/s/g,'\\sqrt').replace(/l/g,'\\left')
-          .replace(/r/g,'\\right').replace(/f/g,'\\frac').replace(/x/g,'\\textstyle');
+      getLatex: function (s) {
+        return '$$' + s.replace(/t/g, '\\times').replace(/s/g, '\\sqrt').replace(/l/g, '\\left')
+            .replace(/r/g, '\\right').replace(/f/g, '\\frac').replace(/x/g, '\\textstyle') + '$$';
       }
     },
     tchisla = window.tchisla = {
@@ -62,7 +62,7 @@
       showAnswer: function (targetNum, baseNum) {
         sys.$answer.style.display = 'block';
         sys.$quiz.innerText = targetNum + '#' + baseNum;
-        sys.$formula.innerText = sys.answer[targetNum][baseNum][1];
+        sys.$formula.innerText = sys.getLatex(sys.answer[targetNum][baseNum][1]);
         sys.$solution.innerText = targetNum + '=' + sys.answer[targetNum][baseNum][0];
       },
       render: function () {
