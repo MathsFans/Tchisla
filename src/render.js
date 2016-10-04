@@ -15,8 +15,9 @@
       getName: function (n) {
         return sys.dataSolutions.replace(/%n/, (n - 1) / 50 | 0)
       },
-      getLatex: function (s) {
-        return '$$' + s.replace(/([a-z])/g,'#$1').
+      getLatex: function (a, s) {
+        return '$$' + a + '=' + s.
+          replace(/([a-z])/g,'#$1').
           replace(/#t/g, '\\times').
           replace(/#s/g, '\\sqrt').
           replace(/#l/g, '\\left').
@@ -69,7 +70,7 @@
         sys.$quiz.innerText = targetNum + '#' + baseNum;
         sys.$solution.innerText = targetNum + '=' + sys.answer[targetNum][baseNum][0];
         if (MathJax) {
-          sys.$formula.innerText = sys.getLatex(sys.answer[targetNum][baseNum][1]);
+          sys.$formula.innerText = sys.getLatex(targetNum, sys.answer[targetNum][baseNum][1]);
           MathJax.Hub.Queue(["Typeset", MathJax.Hub, sys.$formula]);
         }
       },
