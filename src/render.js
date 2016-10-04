@@ -16,14 +16,7 @@
         return sys.dataSolutions.replace(/%n/, (n - 1) / 50 | 0)
       },
       getLatex: function (a, s) {
-        return '$$' + a + '=' + s.
-          replace(/([a-z])/g,'#$1').
-          replace(/#t/g, '\\times').
-          replace(/#s/g, '\\sqrt').
-          replace(/#l/g, '\\left').
-          replace(/#r/g, '\\right').
-          replace(/#f/g, '\\frac').
-          replace(/#x/g, '\\textstyle') + '$$';
+        return '$$' + a + '=' + s.replace(/([a-z])/g, '#$1').replace(/#t/g, '\\times').replace(/#s/g, '\\sqrt').replace(/#l/g, '\\left').replace(/#r/g, '\\right').replace(/#f/g, '\\frac').replace(/#x/g, '\\textstyle') + '$$';
       }
     },
     tchisla = window.tchisla = {
@@ -62,10 +55,13 @@
             td.innerText = parseInt(line[x], 36);
             tr.appendChild(td);
           }
+          sys.maxY = bestArr.length;
           sys.$solutions.appendChild(tr);
         });
       },
       showAnswer: function (targetNum, baseNum) {
+        sys.x = +baseNum;
+        sys.y = +targetNum;
         sys.$answer.style.display = 'block';
         sys.$quiz.innerText = targetNum + '#' + baseNum;
         sys.$solution.innerText = targetNum + '=' + sys.answer[targetNum][baseNum][0];
@@ -78,7 +74,9 @@
         tchisla.getData(sys.dataBest, tchisla.preparePad, true);
         sys.$solutions.addEventListener('click', function (e) {
           var quiz = e.target.getAttribute('rel');
-          if (!quiz) { return; }
+          if (!quiz) {
+            return;
+          }
           var temp = quiz.split('#'), targetNum = +temp[0], baseNum = +temp[1];
           if (!sys[sys.getName(targetNum)]) {
             tchisla.getData(sys.getName(targetNum), tchisla.parseData, false);
@@ -87,7 +85,25 @@
         });
         sys.$answer.addEventListener('click', function (e) {
           if (e.target.id === 'last') {
+            if (--sys.x === 0) {
+              sys.x = 9;
+              sys.y--;
+            }
+            if (sys.y <= 0) {
+              sys.x = 1;
+              sys.y = 1;
+            }
+            tchisla.showAnswer(sys.y, sys.x);
           } else if (e.target.id === 'next') {
+            if (++sys.x === 10) {
+              sys.x = 1;
+              sys.y++;
+            }
+            if (sys.y > sys.maxY) {
+              sys.x = 9;
+              sys.y = sys.maxY;
+            }
+            tchisla.showAnswer(sys.y, sys.x);
           } else {
             sys.$answer.style.display = 'none';
           }

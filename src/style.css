@@ -73,13 +73,13 @@ body {
 }
 
 #answer #formula {
-    height: 140px;
+    height: 130px;
     display: table-cell;
-    width: 312px;
+    width: 360px;
     vertical-align: middle;
     text-align: center;
     font-size: 16px;
-    font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw;
+    font-family: MJXc-TeX-main-R, MJXc-TeX-main-Rw;
 }
 
 #answer #solution {
