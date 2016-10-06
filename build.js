@@ -2,7 +2,7 @@
 var fs = require('fs'),
   path = require('path'),
   conf = {
-    dataSourceFile: 'solutions.txt',
+    dataSourceFile: 'src/solutions.txt',
     dataTargetPath: 'data/',
     dataBestFile: 'best.dat',
     dataSolutionFile: 'solution.%n.dat',
