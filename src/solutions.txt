@@ -9249,7 +9249,7 @@
 1249#5 (5^5+5^5-5)/5 $$\frac{\textstyle{5}^{5}+{5}^{5}-5}{\textstyle5}$$
 1250#5 (5!+5)*(5+5) $$\left(5!+5\right)\times\left(5+5\right)$$
 1251#5 (5+5^5+5^5)/5 $$\frac{\textstyle5+{5}^{5}+{5}^{5}}{\textstyle5}$$
-1252#5 (5+5+5^5+5^5)/5 $$\frac{\textstyle5+5+{5}^{5}+{5}^{5}}{\textstyle5}$$
+1252#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5) $$\left({\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}}^5!+\frac{\textstyle\sqrt{\!\!\sqrt{5}}}{\textstyle\sqrt{5}}\right)\times\left(\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}\right)$$
 1253#5 5+(5+5)*(5!+5!/5/5) $$5+\left(5+5\right)\times\left(5!+\frac{\textstyle5!}{\textstyle5\times5}\right)$$
 1254#5 ((5!-5)*55-55)/5 $$\frac{\textstyle\left(5!-5\right)\times55-55}{\textstyle5}$$
 1255#5 5*5*55-5! $$5\times5\times55-5!$$
