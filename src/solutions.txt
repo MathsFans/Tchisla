@@ -9249,12 +9249,12 @@
 1249#5 (5^5+5^5-5)/5 $$\frac{\textstyle{5}^{5}+{5}^{5}-5}{\textstyle5}$$
 1250#5 (5!+5)*(5+5) $$\left(5!+5\right)\times\left(5+5\right)$$
 1251#5 (5+5^5+5^5)/5 $$\frac{\textstyle5+{5}^{5}+{5}^{5}}{\textstyle5}$$
-1252#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5) $$({{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\text{5}}}}}}}^{5!}}\text{+}\frac{\sqrt{\sqrt{\text{5}}}}{\sqrt{\text{5}}})*(\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}})$$
+1252#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5) $$\left({\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}}^{5!}+\frac{\textstyle\sqrt{\!\!\sqrt{5}}}{\textstyle\sqrt{5}}\right)\times\left(\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}\right)$$
 1253#5 5+(5+5)*(5!+5!/5/5) $$5+\left(5+5\right)\times\left(5!+\frac{\textstyle5!}{\textstyle5\times5}\right)$$
 1254#5 ((5!-5)*55-55)/5 $$\frac{\textstyle\left(5!-5\right)\times55-55}{\textstyle5}$$
 1255#5 5*5*55-5! $$5\times5\times55-5!$$
 1256#5 5+(5+5^5+5^5)/5 $$5+\frac{\textstyle5+{5}^{5}+{5}^{5}}{\textstyle5}$$
-1257#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5)+5 $$({{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\text{5}}}}}}}^{5!}}\text{+}\frac{\sqrt{\sqrt{\text{5}}}}{\sqrt{\text{5}}})*(\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}})+5$$
+1257#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5)+5 $$5+\left({\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}}^{5!}+\frac{\textstyle\sqrt{\!\!\sqrt{5}}}{\textstyle\sqrt{5}}\right)\times\left(\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}\right)$$
 1258#5 (5+5)*(5!+(5+5!/5)/5) $$\left(5+5\right)\times\left(5!+\frac{\textstyle5+\frac{\textstyle5!}{\textstyle5}}{\textstyle5}\right)$$
 1259#5 (5/(5!/((5+5)!))-5!)/(5!) $$\frac{\textstyle5\times\frac{\textstyle\left(5+5\right)!}{\textstyle5!}-5!}{\textstyle5!}$$
 1260#5 5/(5!*5!/((5+5)!)) $$5\times\frac{\textstyle\left(5+5\right)!}{\textstyle5!\times5!}$$
@@ -9369,7 +9369,7 @@
 1369#5 5*5*55-5/5-5 $$5\times5\times55-\frac{\textstyle5}{\textstyle5}-5$$
 1370#5 5*5*55-5 $$5\times5\times55-5$$
 1371#5 5/5+5*5*55-5 $$\frac{\textstyle5}{\textstyle5}+5\times5\times55-5$$
-1372#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5)+5! $$({{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\text{5}}}}}}}^{5!}}\text{+}\frac{\sqrt{\sqrt{\text{5}}}}{\sqrt{\text{5}}})*(\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}})+5!$$
+1372#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5)+5! $$5!+\left({\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}}^{5!}+\frac{\textstyle\sqrt{\!\!\sqrt{5}}}{\textstyle\sqrt{5}}\right)\times\left(\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}\right)$$
 1373#5 5*5*55-(5+5)/5 $$5\times5\times55-\frac{\textstyle5+5}{\textstyle5}$$
 1374#5 5*5*55-5/5 $$5\times5\times55-\frac{\textstyle5}{\textstyle5}$$
 1375#5 5*5*55 $$5\times5\times55$$
@@ -9875,12 +9875,12 @@
 1875#5 (5!+5)*(5+5+5) $$\left(5!+5\right)\times\left(5+5+5\right)$$
 1876#5 5/5+(5!+5)*(5+5+5) $$\frac{\textstyle5}{\textstyle5}+\left(5!+5\right)\times\left(5+5+5\right)$$
 1877#5 (5+5)/5+(5!+5)*(5+5+5) $$\frac{\textstyle5+5}{\textstyle5}+\left(5!+5\right)\times\left(5+5+5\right)$$
-1878#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5+√√5) $$({{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\text{5}}}}}}}^{5!}}\text{+}\frac{\sqrt{\sqrt{\text{5}}}}{\sqrt{\text{5}}})*(\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}})$$
+1878#5 (√√√√√5^5!+√√5/√5)*(√√5+√√5+√√5) $$\left({\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}}^{5!}+\frac{\textstyle\sqrt{\!\!\sqrt{5}}}{\textstyle\sqrt{5}}\right)\times\left(\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}\right)$$
 1879#5 5+(5!+5)*(5+5+5)-5/5 $$5+\left(5!+5\right)\times\left(5+5+5\right)-\frac{\textstyle5}{\textstyle5}$$
 1880#5 5+(5!+5)*(5+5+5) $$5+\left(5!+5\right)\times\left(5+5+5\right)$$
 1881#5 (5+5+(5!+5/5)/5)*55 $$\left(5+5+\frac{\textstyle5!+\frac{\textstyle5}{\textstyle5}}{\textstyle5}\right)\times55$$
 1882#5 (5+5!/(5+5))*555/5-5 $$\frac{\textstyle\left(5+\frac{\textstyle5!}{\textstyle5+5}\right)\times555}{\textstyle5}-5$$
-1883#5 5+(√√√√√5^5!+√√5/√5)*(√√5+√√5+√√5) $$5+\[({{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\text{5}}}}}}}^{5!}}\text{+}\frac{\sqrt{\sqrt{\text{5}}}}{\sqrt{\text{5}}})*(\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}}+\sqrt{\sqrt{5}})\]$$
+1883#5 5+(√√√√√5^5!+√√5/√5)*(√√5+√√5+√√5) $$5+\left({\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}}^{5!}+\frac{\textstyle\sqrt{\!\!\sqrt{5}}}{\textstyle\sqrt{5}}\right)\times\left(\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}+\sqrt{\!\!\sqrt{5}}\right)$$
 1884#5 ((5!+5*5)*(5!-55)-5)/5 $$\frac{\textstyle\left(5!+5\times5\right)\times\left(5!-55\right)-5}{\textstyle5}$$
 1885#5 (5+5!/5)*(5!-55) $$\left(5+\frac{\textstyle5!}{\textstyle5}\right)\times\left(5!-55\right)$$
 1886#5 (5!+5)*(5+5+5)+55/5 $$\left(5!+5\right)\times\left(5+5+5\right)+\frac{\textstyle55}{\textstyle5}$$
@@ -9950,7 +9950,7 @@
 1950#5 5*(5!+5*55-5) $$5\times\left(5!+5\times55-5\right)$$
 1951#5 5*(5!+5*55)-5!/5 $$5\times\left(5!+5\times55\right)-\frac{\textstyle5!}{\textstyle5}$$
 1952#5 (5!+(5+5)/5)*(5+55/5) $$\left(5!+\frac{\textstyle5+5}{\textstyle5}\right)\times\left(5+\frac{\textstyle55}{\textstyle5}\right)$$
-1953#5 (√√√√5^5!/5-√5)*(√5+√5+√5)/5! $$\frac{(\frac{{{\sqrt{\sqrt{\sqrt{\sqrt{5}}}}}^{5!}}}{5}-\sqrt{5})*(\sqrt{5}+\sqrt{5}+\sqrt{5})}{5!}$$
+1953#5 (√√√√5^5!/5-√5)*(√5+√5+√5)/5! $$\left(\frac{\textstyle{\sqrt{\!\!\sqrt{\!\!\sqrt{\!\!\sqrt{5}}}}}^{5!}}{\textstyle5}-\sqrt{5}\right)\times\left(\frac{\textstyle\sqrt{5}+\sqrt{5}+\sqrt{5}}{\textstyle5!}\right)$$
 1954#5 5+(5!+55*(5!+55))/5 $$5+\frac{\textstyle5!+55\times\left(5!+55\right)}{\textstyle5}$$
 1955#5 (5!-5)*(5+5!/(5+5)) $$\left(5!-5\right)\times\left(5+\frac{\textstyle5!}{\textstyle5+5}\right)$$
 1956#5 (5^5+55+5!*55)/5 $$\frac{\textstyle{5}^{5}+55+5!\times55}{\textstyle5}$$
