@@ -27,23 +27,23 @@ __更新日志__
 
 Readme in English
 
-This project will collect all optimal solutions for iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
+This project will collect all optimal solutions to the iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
 
 This Repo is currently maintained by
 - [@gsdevcn](https://github.com/gsdevcn)
 - [@Tairraos](https://github.com/tairraos)
 
-Any suggestions are welcome.
+We welcome any comments.
 
-All current optimal solutions for 1-2000 are updated, more solutions are coming soon.
+All currently optimal solutions to 1-2000 have been updated, and more solutions are coming soon.
 
 [Solutions Data](https://github.com/MathsFans/Tchisla/blob/master/src/solutions.txt)
 
 [Rendered Page](https://mathsfans.github.io/Tchisla/)
 
 __Changelog__
-* 2017-04-30 Update 1252#5=6,1257#5=7,1372#5=7,1794#7=7,1878#5=7,1883#5=8,1953#5=8 See[issue 1](https://github.com/MathsFans/Tchisla/issues/1)
-* 2016-10-01 Add 1st version of rendered page
-* 2016-09-28 Update 8 step solution for 1788#7
-* 2016-09-26 Update 6 step solutions for 1401#4 and 1403#4
-* 2016-09-24 Update 7 step solution for 1905#6
+* 2017-04-30 Updated 1252#5=6,1257#5=7,1372#5=7,1794#7=7,1878#5=7,1883#5=8,1953#5=8 See[issue 1](https://github.com/MathsFans/Tchisla/issues/1)
+* 2016-10-01 Added 1st version of rendered page
+* 2016-09-28 Updated 8 step solution for 1788#7
+* 2016-09-26 Updated 6 step solutions for 1401#4 and 1403#4
+* 2016-09-24 Updated 7 step solution for 1905#6
