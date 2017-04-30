@@ -17,6 +17,7 @@
 [渲染页面](https://mathsfans.github.io/Tchisla/)
 
 __更新日志__
+* 2017-04-30 更新1252#5=6,1257#5=7,1372#5=7,1794#7=7,1878#5=7,1883#5=8,1953#5=8 参见[issue 1](https://github.com/MathsFans/Tchisla/issues/1)
 * 2016-10-01 新增初版渲染页面
 * 2016-09-28 更新1788#7的8步解法
 * 2016-09-26 更新1401#4和1403#4的6步解法
@@ -41,6 +42,7 @@ All current optimal solutions for 1-2000 are updated, more solutions are coming 
 [Rendered Page](https://mathsfans.github.io/Tchisla/)
 
 __Changelog__
+* 2017-04-30 Update 1252#5=6,1257#5=7,1372#5=7,1794#7=7,1878#5=7,1883#5=8,1953#5=8 See[issue 1](https://github.com/MathsFans/Tchisla/issues/1)
 * 2016-10-01 Add 1st version of rendered page
 * 2016-09-28 Update 8 step solution for 1788#7
 * 2016-09-26 Update 6 step solutions for 1401#4 and 1403#4
