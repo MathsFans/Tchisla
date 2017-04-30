@@ -27,7 +27,7 @@ __更新日志__
 
 Readme in English
 
-This project will collect all optimal solutions to the iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
+This project is collecting all optimal solutions to the iOS game [Tchisla](https://itunes.apple.com/us/app/tchisla/id1100623105?mt=8).
 
 This Repo is currently maintained by
 - [@gsdevcn](https://github.com/gsdevcn)
